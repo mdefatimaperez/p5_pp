@@ -287,10 +287,100 @@
             </div>
         </div>
         <!-- BOTON AGREGAR ALBUM-->
-        <a href="addAlbum.html"
-            class="mt-4 px-5 py-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">Agregar
-            Album</a>
+        <div class="flex flex-col">
+            <a href="addAlbum.html"
+                class="mt-4 px-5 py-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">Agregar
+                Album</a>
+         
+        </div>
+    </div>
 
+    <div class="w-full">
+        <div class='flex w-8/12  bg-gray-800 shadow-md rounded-lg overflow-hidden mx-auto'>
+            <div class="flex flex-col w-full">
+                <div class="flex p-5 border-b">
+                    <img class='w-20 h-20 object-cover' alt='User avatar' src='kl.jpg'>
+                    <div class="flex flex-col px-2 w-full">
+                        <span class="text-xs text-white uppercase font-medium ">
+                            now playing
+                        </span>
+                        <span class="text-sm text-yellow-500 capitalize font-semibold pt-1">
+                           SONG  
+                        </span>
+                        <span class="text-xs text-gray-500 uppercase font-medium ">
+                            -DISC
+                        </span>
+                        <div class="flex justify-end">
+                            <img class="w-5 cursor-pointer" src="https://www.iconpacks.net/icons/2/free-favourite-icon-2765-thumb.png" />
+                            <img class="w-5 cursor-pointer mx-2" src="https://www.iconpacks.net/icons/2/free-favourite-icon-2765-thumb.png" />
+                            <img class="w-5 cursor-pointer" src="https://www.iconpacks.net/icons/2/free-favourite-icon-2765-thumb.png" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col sm:flex-row items-center p-5">
+                    <div class="flex items-center">
+                        <div class="flex space-x-3 p-2">
+            <button class="focus:outline-none">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#FFDE4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line></svg>
+            </button>
+            <button class="rounded-full w-10 h-10 flex items-center justify-center pl-0.5 ring-1 ring-yellow-400 focus:outline-none">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#FFDE4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+            <button class="focus:outline-none">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#FFDE4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg>
+            </button>
+          </div>
+                    </div>
+                    <div class="relative w-full sm:w-1/2 md:w-7/12 lg:w-4/6 ml-2">
+                        <div class="bg-yellow-300 h-2 w-full rounded-lg"></div>
+                         <div class="bg-yellow-500 h-2 w-1/2 rounded-lg absolute top-0"></div>
+            
+                    </div>
+                    <div class="flex justify-end w-full sm:w-auto pt-1 sm:pt-0">
+    <span class="text-xs text-white uppercase font-medium pl-2">
+                        02:00/04:00                   
+                    </span>
+                    </div>
+                    
+                </div>
+                
+                <div class="flex flex-col p-5">
+                    <div class="border-b pb-1 flex justify-between items-center mb-2">
+                        <span class=" text-base font-semibold uppercase text-white"> play list</span>
+                    </div>
+    
+                    <div class="flex border-b py-3 cursor-pointer hover:shadow-md px-2 ">
+                        <img class='w-10 h-10 object-cover rounded-lg' alt='User avatar' src='kl.jpg'>
+                        <div class="flex flex-col px-2 w-full">
+                            
+                            <span class="text-sm text-yellow-500 capitalize font-semibold pt-1">
+                            SONG   
+                            </span>
+                            <span class="text-xs text-gray-500 uppercase font-medium ">
+                                -DISC
+                            </span>
+                        </div>
+                        <img class="w-7 h-7" src="trash.png">
+                    </div>
+                     <div class="flex border-b py-3 cursor-pointer hover:shadow-md px-2 ">
+                        <img class='w-10 h-10 object-cover rounded-lg' alt='User avatar' src='kl.jpg'>
+                        <div class="flex flex-col px-2 w-full">
+                            
+                            <span class="text-sm text-yellow-500 capitalize font-semibold pt-1">
+                            SONG  
+                            </span>
+                            <span class="text-xs text-gray-500 uppercase font-medium ">
+                                -DISC
+                            </span>
+                        </div>
+                        
+                        <img class="w-7 h-7 " src="trash.png">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <br>
     <!----------------------------------------FOTOS-------------------------------------->
@@ -324,13 +414,14 @@
         </div>
     </div>
     <div class="flex justify-center mt-8 ">
-    <a href="#"
-    class="mt-8 px-5 py-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">Agregar
-    Foto</a></div>
+        <a href="#"
+            class="mt-8 px-5 py-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">Agregar
+            Foto</a>
+    </div>
     <!----------------------------------------EVENTOS-------------------------------------->
     <h1 id="event" class="text-[#94a3b8] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-5xl mt-28">EVENTOS</h1>
     <br>
-    <div class="text-[#94a3b8] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 mt-3">
+    <div class="text-[#94a3b8] mb-6 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 mt-3">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-6">
                 <h2 class="text-white text-xl mb-4">Próximos Conciertos</h2>
@@ -405,9 +496,9 @@
             </div>
         </div>
         <br>
-        <a href="#"
-            class="mt-4 px-5 py-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">Agregar
-            Evento</a>
+        <a href="compraTickets.html"
+            class=" mb-4 mt-4 px-5 py-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">Comprar
+            Tickets</a>
     </div>
 
 
