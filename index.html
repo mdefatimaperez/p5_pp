@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kendrick Lamar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="site.js"></script> 
+    <script defer src="site.js"></script>
 
 
 </head>
@@ -186,13 +186,15 @@
     <h1 id="albums" class="text-[#94a3b8] mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-5xl mt-28">ALBUMS</h1>
     <br>
     <div class="flex justify-around items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex-col md:flex-row">
-        <!--CARD 1-->
-        <div
-            class="max-w-xs container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl w-full md:max-w-xs md:w-auto mb-4">
-            <img class="w-full cursor-pointer" src="ALBUM1.webp" alt="" />
+        <!------------------------------------------ALBUM 1------------------------->
+        <div class="max-h-full container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl w-full md:max-w-xs md:w-auto mb-4 relative"
+            id="albumContainer1">
+            <img class="w-full cursor-pointer" src="ALBUM1.webp" alt="" id="albumImage1" />
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center py-2 text-yellow-300 hidden cursor-pointer"
+                id="hoverText1">CLICK AL ALBUM</div>
             <div class="flex p-4 justify-between">
                 <div class="flex items-center space-x-2">
-                    <h2 class="text-gray-800 font-bold cursor-pointer">DAMN.</h2>
+                    <h2 class="text-gray-800 text-lg font-bold cursor-pointer">DAMN.</h2>
                 </div>
                 <div class="flex space-x-2">
                     <div class="flex space-x-1 items-center">
@@ -206,8 +208,45 @@
                         <span>50k</span>
                     </div>
                     <div class="flex space-x-1 items-center">
+                        <span class="favorite-icon"> <span>
+                                <svg id="svg" xmlns="http://www.w3.org/2000/svg"
+                                    class="h-7 w-7 text-red-500 hover:text-red-400 transition duration-100 cursor-pointer"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </span>
+                        <span>90k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------ALBUM 2------------------------->
+        <div class="max-w-xs container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl w-full md:max-w-xs md:w-auto mb-4 relative"
+            id="albumContainer2">
+            <img class="w-full cursor-pointer" src="ALBUM2.webp" alt="" id="albumImage2" />
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center py-2 text-yellow-300 hidden cursor-pointer"
+                id="hoverText2">CLICK AL ALBUM</div>
+            <div class="flex p-4 justify-between">
+                <div class="flex items-center space-x-2">
+                    <h2 class="text-gray-800 font-bold cursor-pointer">Mr.Morale & The Big Steppers</h2>
+                </div>
+                <div class="flex space-x-2">
+                    <div class="flex space-x-1 items-center">
                         <span>
-                            <svg xmlns="http://www.w3.org/2000/svg"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-600 cursor-pointer"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </span>
+                        <span>55k</span>
+                    </div>
+                    <div class="flex space-x-1 items-center">
+                        <span class="favorite-icon">
+                            <svg id="svg" xmlns="http://www.w3.org/2000/svg"
                                 class="h-7 w-7 text-red-500 hover:text-red-400 transition duration-100 cursor-pointer"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -220,13 +259,15 @@
                 </div>
             </div>
         </div>
-        <!--CARD 2-->
-        <div
-            class="max-w-xs container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl w-full md:max-w-xs md:w-auto mb-4">
-            <img class="w-full cursor-pointer" src="ALBUM2.webp" alt="KL" />
+        <!------------------------------------------ALBUM 3------------------------->
+        <div class="max-w-xs container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl w-full md:max-w-xs md:w-auto mb-4 relative"
+            id="albumContainer3">
+            <img class="w-full cursor-pointer" src="ALBUM3.webp" alt="" id="albumImage3" />
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center py-2 text-yellow-300 hidden cursor-pointer"
+                id="hoverText3">CLICK AL ALBUM</div>
             <div class="flex p-4 justify-between">
                 <div class="flex items-center space-x-2">
-                    <h2 class="text-sm text-gray-800 font-bold cursor-pointer">Mr. Morale & the Big Steppers</h2>
+                    <h2 class="text-gray-800 text-lg font-bold cursor-pointer">Not Like Us</h2>
                 </div>
                 <div class="flex space-x-2">
                     <div class="flex space-x-1 items-center">
@@ -237,11 +278,11 @@
                                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
                         </span>
-                        <span>80k</span>
+                        <span>82k</span>
                     </div>
                     <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg"
+                        <span class="favorite-icon">
+                            <svg id="svg" xmlns="http://www.w3.org/2000/svg"
                                 class="h-7 w-7 text-red-500 hover:text-red-400 transition duration-100 cursor-pointer"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -254,134 +295,10 @@
                 </div>
             </div>
         </div>
-        <!--CARD 3-->
-        <div
-            class="max-w-xs container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl w-full md:max-w-xs md:w-auto mb-4">
-            <img class="w-full cursor-pointer" src="ALBUM3.webp" alt="" />
-            <div class="flex p-4 justify-between">
-                <div class="flex items-center space-x-2">
-                    <h2 class="text-gray-800 font-bold cursor-pointer">Not Like Us</h2>
-                </div>
-                <div class="flex space-x-2">
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-600 cursor-pointer"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                            </svg>
-                        </span>
-                        <span>22k</span>
-                    </div>
-                    <div class="flex space-x-1 items-center">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-7 w-7 text-red-500 hover:text-red-400 transition duration-100 cursor-pointer"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </span>
-                        <span>20k</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- BOTON AGREGAR ALBUM-->
         <div class="flex flex-col">
-            <a href="addAlbum.html"
-                class="mt-4 px-5 py-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">Agregar
-                Album</a>
-         
-        </div>
-    </div>
-
-    <div class="w-full">
-        <div class='flex w-8/12  bg-gray-800 shadow-md rounded-lg overflow-hidden mx-auto'>
-            <div class="flex flex-col w-full">
-                <div class="flex p-5 border-b">
-                    <img class='w-20 h-20 object-cover' alt='User avatar' src='kl.jpg'>
-                    <div class="flex flex-col px-2 w-full">
-                        <span class="text-xs text-white uppercase font-medium ">
-                            now playing
-                        </span>
-                        <span class="text-sm text-yellow-500 capitalize font-semibold pt-1">
-                           SONG  
-                        </span>
-                        <span class="text-xs text-gray-500 uppercase font-medium ">
-                            -DISC
-                        </span>
-                        <div class="flex justify-end">
-                            <img class="w-5 cursor-pointer" src="https://www.iconpacks.net/icons/2/free-favourite-icon-2765-thumb.png" />
-                            <img class="w-5 cursor-pointer mx-2" src="https://www.iconpacks.net/icons/2/free-favourite-icon-2765-thumb.png" />
-                            <img class="w-5 cursor-pointer" src="https://www.iconpacks.net/icons/2/free-favourite-icon-2765-thumb.png" />
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="flex flex-col sm:flex-row items-center p-5">
-                    <div class="flex items-center">
-                        <div class="flex space-x-3 p-2">
-            <button class="focus:outline-none">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#FFDE4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line></svg>
-            </button>
-            <button class="rounded-full w-10 h-10 flex items-center justify-center pl-0.5 ring-1 ring-yellow-400 focus:outline-none">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#FFDE4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            </button>
-            <button class="focus:outline-none">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#FFDE4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg>
-            </button>
-          </div>
-                    </div>
-                    <div class="relative w-full sm:w-1/2 md:w-7/12 lg:w-4/6 ml-2">
-                        <div class="bg-yellow-300 h-2 w-full rounded-lg"></div>
-                         <div class="bg-yellow-500 h-2 w-1/2 rounded-lg absolute top-0"></div>
-            
-                    </div>
-                    <div class="flex justify-end w-full sm:w-auto pt-1 sm:pt-0">
-    <span class="text-xs text-white uppercase font-medium pl-2">
-                        02:00/04:00                   
-                    </span>
-                    </div>
-                    
-                </div>
-                
-                <div class="flex flex-col p-5">
-                    <div class="border-b pb-1 flex justify-between items-center mb-2">
-                        <span class=" text-base font-semibold uppercase text-white"> play list</span>
-                    </div>
-    
-                    <div class="flex border-b py-3 cursor-pointer hover:shadow-md px-2 ">
-                        <img class='w-10 h-10 object-cover rounded-lg' alt='User avatar' src='kl.jpg'>
-                        <div class="flex flex-col px-2 w-full">
-                            
-                            <span class="text-sm text-yellow-500 capitalize font-semibold pt-1">
-                            SONG   
-                            </span>
-                            <span class="text-xs text-gray-500 uppercase font-medium ">
-                                -DISC
-                            </span>
-                        </div>
-                        <img class="w-7 h-7" src="trash.png">
-                    </div>
-                     <div class="flex border-b py-3 cursor-pointer hover:shadow-md px-2 ">
-                        <img class='w-10 h-10 object-cover rounded-lg' alt='User avatar' src='kl.jpg'>
-                        <div class="flex flex-col px-2 w-full">
-                            
-                            <span class="text-sm text-yellow-500 capitalize font-semibold pt-1">
-                            SONG  
-                            </span>
-                            <span class="text-xs text-gray-500 uppercase font-medium ">
-                                -DISC
-                            </span>
-                        </div>
-                        
-                        <img class="w-7 h-7 " src="trash.png">
-    
-                    </div>
-                </div>
-            </div>
+            <a href="addAlbum.html"class="mt-4 px-5 py-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">Agregar Album</a>
         </div>
     </div>
     <br>
@@ -502,9 +419,6 @@
             class=" mb-4 mt-4 px-5 py-4 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">Comprar
             Tickets</a>
     </div>
-
-
-   
 
 </body>
 

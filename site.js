@@ -35,3 +35,53 @@ mobileMenuButton.addEventListener('click', () => {
   openIcon.classList.toggle('hidden');
   closeIcon.classList.toggle('hidden');
 });
+
+// FUNCIONES PARA ALBUM
+
+function handleAlbumHover(albumContainerId) {
+  const albumContainer = document.getElementById(albumContainerId);
+  const albumImage = document.getElementById(`albumImage${albumContainerId.slice(-1)}`);
+  const hoverText = document.getElementById(`hoverText${albumContainerId.slice(-1)}`);
+
+  albumContainer.addEventListener('mouseover', () => {
+      albumImage.style.filter = 'blur(3px)';
+      hoverText.classList.toggle('hidden');
+      hoverText.classList.add('block');
+  });
+
+  albumContainer.addEventListener('mouseout', () => {
+      albumImage.style.filter = 'blur(0px)';
+      hoverText.classList.remove('block');
+      hoverText.classList.add('hidden');
+  });
+
+  hoverText.addEventListener('click', () => {
+      // Mapeo de IDs de contenedores con URLs
+      const urls = {
+          'albumContainer1': 'album1.html',
+          'albumContainer2': 'album2.html',
+          'albumContainer3': 'album3.html'
+      };
+      window.location.href = urls[albumContainerId]; // Redirige a la URL correspondiente
+  });
+}
+
+const albumContainers = ['albumContainer1', 'albumContainer2', 'albumContainer3'];
+
+for (const albumContainerId of albumContainers) {
+  handleAlbumHover(albumContainerId);
+}
+
+
+//ME GUSTA ALBUM
+
+const favoriteIcons = document.querySelectorAll('.favorite-icon');
+
+favoriteIcons.forEach(favoriteIcon => {
+  const favoriteSvg = favoriteIcon.querySelector('svg');
+
+  favoriteIcon.addEventListener('click', () => {
+      favoriteSvg.classList.toggle('text-red-500');
+      favoriteSvg.classList.toggle('text-gray-400');
+  });
+});
